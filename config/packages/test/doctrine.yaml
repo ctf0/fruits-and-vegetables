@@ -1,0 +1,8 @@
+doctrine:
+    dbal:
+        driver: 'pdo_sqlite'
+        url: '%env(resolve:DATABASE_URL)%'
+        # This should match the path set in .env.test
+        path: '%kernel.project_dir%/var/data/test.db'
+    orm:
+        auto_mapping: true
